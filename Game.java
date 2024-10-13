@@ -57,3 +57,44 @@ public class Game {
         }
     }
 }
+
+
+// For n*n
+// class TicTacToe {
+//     private int n;
+//     private ArrayList<Integer> rowList;
+//     private ArrayList<Integer> colList;
+//     private int diagonal;
+//     private int antiDiagonal;
+//     public TicTacToe(int n) {
+//         this.n = n;
+//         rowList = new ArrayList<>();
+//         colList = new ArrayList<>();
+
+//         for (int i = 0; i < n; i++) {
+//             rowList.add(0);
+//             colList.add(0);
+//         }
+//     }
+    
+//     public int move(int row, int col, int player) {
+//         if(player == 1) {
+//             rowList.set(row, rowList.get(row)+1);
+//             colList.set(col, colList.get(col)+1);
+//             if(row == col) diagonal++;
+//             if(row+col == n-1) antiDiagonal++;
+//         }
+//         else {
+//             rowList.set(row, rowList.get(row)-1);
+//             colList.set(col, colList.get(col)-1);
+//             if(row == col) diagonal--;
+//             if(row+col == n-1) antiDiagonal--;
+//         }
+//         if(rowList.get(row) == n || colList.get(col) == n || diagonal == n || antiDiagonal == n)
+//             return 1;
+//         else if(rowList.get(row) == -n || colList.get(col) == -n || diagonal == -n || antiDiagonal == -n)
+//             return 2;
+//         else
+//             return 0;
+//     }
+// }
